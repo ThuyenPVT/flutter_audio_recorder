@@ -280,8 +280,7 @@ public class FlutterAudioRecorderPlugin implements MethodCallHandler, PluginRegi
   }
 
   private String getTempFilename() {
-    String filepath = mFilePath + ".temp";
-    return filepath;
+    return mFilePath;
   }
 
   private void copyWaveFile(String inFilename, String outFilename) {
