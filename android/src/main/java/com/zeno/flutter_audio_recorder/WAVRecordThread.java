@@ -119,7 +119,7 @@ public class WAVRecordThread extends RecordThread {
     }
 
     private String getTempFilename() {
-        return this.filePath + ".temp";
+        return this.filePath;
     }
 
     private void copyWaveFile(String inFilename, String outFilename) {
@@ -255,6 +255,6 @@ public class WAVRecordThread extends RecordThread {
 
     @Override
     public String getFilePath() {
-       return  (status == "stopped") ? filePath : getTempFilename();
+        return (status == "stopped") ? filePath : getTempFilename();
     }
 }
