@@ -66,7 +66,7 @@ public class SwiftFlutterAudioRecorderPlugin: NSObject, FlutterPlugin, AVAudioRe
             ]
 
             guard let destinationUrl = URL(string: mPath) else {
-                let errorMessage = "Failed to initialize URL path from string: (mPath)"
+                let errorMessage = "Failed to initialize URL path from string: mPath"
                 print(errorMessage)
                 result(FlutterError(code: "", message: errorMessage, details: "Failed to initialize URL"))
                 return

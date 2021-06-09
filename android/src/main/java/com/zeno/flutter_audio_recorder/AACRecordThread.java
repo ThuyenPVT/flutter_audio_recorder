@@ -1,7 +1,7 @@
 package com.zeno.flutter_audio_recorder;
 
 /*
-~ Nilesh Deokar @nieldeokar on 09/17/18 8:11 AM
+~ JobChat @ThuyenPham
 */
 
 import android.media.AudioFormat;
